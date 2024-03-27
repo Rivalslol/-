@@ -1815,6 +1815,13 @@ local function NYMIRF_fake_script() -- ScriptHub.ScriptHubScript
 			Author = "Rival",
 			Description = "Simple server rejoin script.",
 			Image = GetImage("rejoin", "https://i.imgur.com/JPCYdYK.png")
+		},
+		{
+			Name = "Simple Spy",
+			Script = GetScript("SimpleSpy"),
+			Author = "Gato",
+			Description = "Script to catch remote fires.",
+			Image = GetImage("SimpleSpy", "https://i.imgur.com/JPCYdYK.png")
 		}
 	}
 	
