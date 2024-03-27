@@ -13,3 +13,5 @@ local notifications = notificationLibrary.new({
 
 notifications:BuildNotificationUI();
 notifications:Notify("Rivals Internal UI v1.2 [ LOADED ]");
+notifications:Notify("[+] Added gato hub BETA");
+notifications:Notify("[+] Added webhooks");
