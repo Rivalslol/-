@@ -1,6 +1,6 @@
 local notificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/laagginq/ui-libraries/main/xaxas-notification/src.lua"))();
 local notifications = notificationLibrary.new({            
-    NotificationLifetime = 6, 
+    NotificationLifetime = 13, 
     NotificationPosition = "Middle",
     
     TextFont = Enum.Font.Code,
