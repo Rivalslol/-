@@ -12,8 +12,9 @@ local notifications = notificationLibrary.new({
 });
 
 notifications:BuildNotificationUI();
-notifications:Notify("Gato Hub Beta [ LOADED ]");
-notifications:Notify("Beta might be buggy, I wouldnt afk with it.");
+notifications:Notify("GatoHub beta is currently offline.");
+-- notifications:Notify("Gato Hub Beta [ LOADED ]");
+-- notifications:Notify("Beta might be buggy, I wouldnt afk with it.");
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Catto-YFCN/GatoHub/main/PetCatchersBETA"))()
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/Catto-YFCN/GatoHub/main/PetCatchersBETA"))()
