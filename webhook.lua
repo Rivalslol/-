@@ -72,9 +72,13 @@ local url = "https://discord.com/api/webhooks/1223152300445532282/3UotwF-8fr0erW
 
 local embed = {
     ["title"] = "**Someone Executed Pet Catchers**",
-    ["description"] = "**Username** ```" .. playerName .. "```",
+    ["description"] = "",
     ["color"] = 65280,
     ["fields"] = {
+        {
+            ["name"] = "Username",
+            ["value"] = "**Username** ```" .. playerName .. "```"
+        },
         {
             ["name"] = "User ID",
             ["value"] = "```" .. userId .. "```"
